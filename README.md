@@ -1,8 +1,31 @@
-# IDfy_DeepLearning
+# CIFAR-10 Classifier
 This repository consists of my work on the CIFAR-10 Dataset with Pytorch Framework for Image Classification using various interesting Deep Learning Architectures (Starting with LeNet and ResNet).
 - I have previously worked with TensorFlow in my introductory coursework, but this was a thrilling experience because it challenged my intellect and really captured my interest in the Pytorch framework, hence I am motivated to explore this further.
 - This has also been a nice opportunity for me to revise the Deep Learning and ML concepts that I am familiar with. Moreover, I also came across some interesting papers while making this project which I will definitely find time to read.
+<li>LeNet.py is a LeNet model designed using pytorch from SCRATCH and used throughout the project. The pytorch-provided ResNet-18 Model is also used for comparison of metrics.
+<li>This project aims to develop my foundational understanding of Deep Learning in Computer Vision.</li>
+<li>This Project is Deployed on EC2 instance with the live link of Jupyter Notebooks given in the below section.
+<h2>How to Navigate this project?</h2><br>There are two ways in which you can make use of this project: <br>
+<ol>
+    <h4>STRUCTURE</h4>
 
+        ./cifar.ipynb ==> Main code notebook, where all the models are implemented and their performances are compared.
+        ./pruning.ipynb ==> A notebook to get a better understanding of regularization of deep learning model
+        ./models/ ==> A directory where all the models (pruned and not-pruned are saved as .pth files)
+        ./test.ipynb ==> Jupyter Notebook for TESTING on random test images by classifying them and then comparing with the true label.
+<br>
+<li>Run and Edit it as you want on the following link: <a href=http://34.229.19.142:8888/tree?token=42c7508caeba1b539955bd1a5ff14e785418f6a12d9b0773>CLICK HERE</a> <br> <t>This is a hosted & Deployed Docker image on AWS EC2 instance</t></li> <br> 
+
+<li>Run it locally, meaning we have to clone this git repo and then run the Dockerfile present in the working directory, as follows:  
+    <ul><li>
+
+    git clone https://github.com/rushil00/CIFAR-10_image_classifier/
+    cd path/to/cloned/repo/CIFAR-10_image_classifier
+    docker run -d -p 8888:8888 cifar-10_classifier:latest
+ </li><br>
+ <li>For Installation and Setup of Docker, refer to its documentation: <a href=docs.docker.com>Here</a></li></ul>
+ </li>
+</ol>
 <h2>Following deliverables are provided through this project:-</h3>
 <ul>
     <li>Python Model training (with and without Pruning) in a Jupyter Notebook, while also providing the model ".pth" files for future uses.</li> 
