@@ -2,7 +2,15 @@
 This repository consists of my work on the CIFAR-10 Dataset with Pytorch Framework for Image Classification using various interesting Deep Learning Architectures (Starting with LeNet and ResNet).
 - I have previously worked with TensorFlow in my introductory coursework, but this was a thrilling experience because it challenged my intellect and really captured my interest in the Pytorch framework, hence I am motivated to explore this further.
 - This has also been a nice opportunity for me to revise the Deep Learning and ML concepts that I am familiar with. Moreover, I also came across some interesting papers while making this project which I will definitely find time to read.
+<h2>How to Navigate this project?</h2><br>There are two ways in which you can make use of this project: 
+<ol>
+    <li>Run it locally as follows: 
+    <ul>
 
+        
+    docker run -d -p 8888:8888 cifar-10_classifier:latest
+ </ul></li>
+</ol>
 <h2>Following deliverables are provided through this project:-</h3>
 <ul>
     <li>Python Model training (with and without Pruning) in a Jupyter Notebook, while also providing the model ".pth" files for future uses.</li> 
