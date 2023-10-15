@@ -33,6 +33,22 @@ This repository consists of my work on the CIFAR-10 Dataset with Pytorch Framewo
     <li><b>Pruned Model Files</b> in the "./models" folder ["prunedLeNetModel.pth" , "prunedResNetModel.pth"].
     <li> A report ("./SummaryReport.pdf") summarizing the results, including the accuracy achieved by the original model, the pruning ratio chosen, the accuracy achieved by the pruned model, and the reduction in model size.
 </ul>
-<h2>Link to the Report based on this project:-</h3>
+<h2> Deployment Process and Testing (EC2, etc.)</h2>
+<ul>
+    <li>The Docker image was first publicly built and uploaded via local, to docker-hub as well as ECR (Elastic Container Registry) - An AWS Platform to manage Containerization</li>
+    <li>Then, an EC2 instance was launched, and I set the security groups to allow traffic on 8888 port of the instance because that is usually associated with Jupyter Notebooks</li>
+    <li>After EC2 instance was set, the Docker Image was pulled from the ECR with the following command (after I made sure that I have logged in with the aws CLI):
+        
+        docker pull public.ecr.aws/s3q3e2f3/cifar-10-classifier:latest
+</li>
+    <li>Post the docker setup and deployment on EC2 instance, I ran with the [`docker run`] command stated before </li>
+    <li>For unit testing, I wrote the code and implemented unittesting.py</li>
+    <li><h3>Further GOAL:</h3> Given some more time, I would like to use my ELK Stack Skills and configure the Analytics and Results for this model too. I am a keen learner and problem solver, given an opportunity, I would not disappoint</li>
+</ul>
+<h2>Link to the Report based on this project:-</h2>
 <ol><li type=none><h3><a href="https://docs.google.com/document/d/1JVEw5I6S3AD6iyPr9fjowG7rSYUgez2ruutxTCtZcGY/edit?usp=sharing">Click Here</a>
 <br></h3> This is a Google Document. Feel Free to comment.
+<br> 
+
+
+
